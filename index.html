@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Message in the Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Mochi Boom";
+        src: url("./fonts/Mochi%20Boom%20DEMO.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1 {
+        font-family: "Mochi Boom", sans-serif;
+      }
+
+      body,
+      textarea,
+      button {
+        font-family: "Changa One", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Message in the Machine</h1>
+    <style>
+      body {
+        background-color: #a7c7e7;
+      }
+    </style>
+
+    <div class="message selection">
+      <textarea
+        id="messageinput"
+        maxlength="100"
+        placeholder="Leave a message for a stranger..."
+      ></textarea>
+
+      <p id="charactercount">0 / 100</p>
+
+      <button id="submitmessage">Send it off!</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
